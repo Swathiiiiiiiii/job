@@ -1,0 +1,125 @@
+/* General Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    padding: 15px;
+    text-align: center;
+    background-color: blue; /* Set navbar background color to blue */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 40px; /* Increased space between nav items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white; /* Changed nav link color to white */
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: orange; /* Changed nav link color to orange on hover */
+}
+
+/* Main Header Styles */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    text-align: left;
+}
+
+.header-image {
+    width: 40%; /* Set image width */
+    height: auto; /* Keep the aspect ratio */
+    margin-right: 40px; /* Space between image and text */
+}
+
+.header-content {
+    flex: 1;
+    color: black;
+    text-align: left;
+}
+
+.header-content h1 {
+    font-size: 5rem; /* Increased size of "Job Simplified" text */
+    color: brown; /* Text color for the heading */
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Post Job Button Styles */
+.call-to-action {
+    text-align: center;
+    margin-top: 20px; /* Adjust this value to move button upwards or downwards */
+}
+
+.call-to-action button {
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2em;
+    background-color: blue; /* Changed button color to blue */
+    color: white; /* Text color for button */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-to-action button:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-image {
+        width: 100%; /* Full width for smaller screens */
+        margin: 0 0 20px 0; /* Add margin below image */
+    }
+
+    .header-content h1 {
+        font-size: 3rem; /* Adjust header font size */
+    }
+
+    .header-content p {
+        font-size: 1.2em; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2rem; /* Smaller font size for very small screens */
+    }
+
+    .header-content p {
+        font-size: 1em; /* Further adjust paragraph size */
+    }
+
+    .call-to-action button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}

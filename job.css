@@ -1,0 +1,163 @@
+/* General Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Header Styles */
+.main-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.main-header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:olivedrab;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: black;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Job Listings Section Styles */
+.jobs-section {
+    padding: 20px;
+}
+
+.jobs-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.job-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.job-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.job-item p {
+    margin: 5px 0;
+}
+
+.job-item a {
+    color: #007bff;
+}
+
+.job-item a:hover {
+    text-decoration: underline;
+}
+
+/* Post Job Section Styles */
+.post-job-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.post-job-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.post-job-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post-job-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.post-job-form input,
+.post-job-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-job-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-job-form button:hover {
+    background-color: #0056b3;
+}

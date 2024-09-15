@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Job Simplified</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body class="account-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Job Simplified Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job.html">Available Jobs</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Account Information Section -->
+    <section class="account-info">
+        <div class="container">
+            <h2>Account Information</h2>
+            <div class="info-details">
+                <p><strong>Username:</strong> JohnDoe</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Joined:</strong> January 1, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <div class="container">
+            <h2>Create/Update Your Resume</h2>
+            <form action="resume-handler.php" method="post">
+                <label for="resume-title">Resume Title:</label>
+                <input type="text" id="resume-title" name="resume-title" required>
+
+                <label for="resume-content">Resume Content:</label>
+                <textarea id="resume-content" name="resume-content" rows="10" required></textarea>
+
+                <button type="submit">Save Resume</button>
+            </form>
+            <div class="resume-actions">
+                <button id="download-resume">Download Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="account.js"></script>
+</body>
+</html>

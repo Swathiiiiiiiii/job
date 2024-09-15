@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Jobs - Job Simplified</title>
+    <link rel="stylesheet" href="job.css">
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <header class="main-header">
+        <h1>Job Simplified</h1>
+        <p>Find your next job easily, or post a job opening!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Job Simplified Logo">
+        </div>
+        <ul class="nav-links">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="job.html">Post Job</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Job Listings Section -->
+    <section class="jobs-section">
+        <h2>Available Jobs</h2>
+        <div class="job-list">
+            <div class="job-item">
+                <img src="job1.jpeg" alt="Job Logo" class="job-logo">
+                <h3>Software Engineer</h3>
+                <p>Location: San Francisco, CA</p>
+                <p>Salary: $120,000/year</p>
+                <p><a href="#">Apply Now</a></p>
+            </div>
+            <div class="job-item">
+                <img src="job2.jpeg" alt="Job Logo" class="job-logo">
+                <h3>Data Scientist</h3>
+                <p>Location: New York, NY</p>
+                <p>Salary: $130,000/year</p>
+                <p><a href="#">Apply Now</a></p>
+            </div>
+            <div class="job-item">
+                <img src="job2.jpeg" alt="Job Logo" class="job-logo">
+                <h3>Product Manager</h3>
+                <p>Location: Seattle, WA</p>
+                <p>Salary: $110,000/year</p>
+                <p><a href="#">Apply Now</a></p>
+            </div>
+            <div class="job-item">
+                <img src="job1.jpeg" alt="Job Logo" class="job-logo">
+                <h3>UX Designer</h3>
+                <p>Location: Austin, TX</p>
+                <p>Salary: $95,000/year</p>
+                <p><a href="#">Apply Now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Job Section -->
+    <section class="post-job-section">
+        <h2>Post a Job</h2>
+        <form class="post-job-form" action="#" method="POST">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary" name="salary" required>
+
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description" required></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
